@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+            <a class="navbar-brand mr-auto" href="#">E-commerce</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>          
+            <div class="navbar-nav ml-auto collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-cart-plus"></i> Canasta </span></a></li>
+                    <li class="nav-item"><a class="btn btn-outline-secondary text-white" href="#">Salir</a></li>                    
+                </ul>
+            </div>
+          </nav>
+    </header>
+    <div class="container">
+        <div class="row">            
+            <div class="col-lg-3 mt-4">
+                <div class="row">                    
+                    <div class="col-xs-12 col-md-12 col-lg-12 mt-3">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Buscar Camisas" aria-label="Buscar Camisas" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                            </div>
+                        </div> 
+                    </div>  
+                    <div class="d-none d-lg-block col-lg-12">
+                        <h4>Categorías</h4>
+                        <table class="table table-hover">
+                            <thead class="bg-primary text-white">
+                                <tr>
+                                    <th scope="col">Todos</th>
+                                    <th scope="col"><span class="badge badge-secondary">100</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hombre</td>
+                                    <td><span class="badge badge-secondary">4</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Mujer</td>
+                                    <td><span class="badge badge-secondary">10</span></td>
+                                </tr>                                
+                                <tr>
+                                    <td>Hipster</td>
+                                    <td><span class="badge badge-secondary">12</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Metal</td>
+                                    <td><span class="badge badge-secondary">24</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Universidad</td>
+                                    <td><span class="badge badge-secondary">6</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Deportiva</td>
+                                    <td><span class="badge badge-secondary">5</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Rayas</td>
+                                    <td><span class="badge badge-secondary">8</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Apretada</td>
+                                    <td><span class="badge badge-secondary">11</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-9 mt-4">
+                <div class="row">
+                    <div class="col-12 mt-3">
+                        <div id="carouselCamisas" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselCamisas" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselCamisas" data-slide-to="1"></li>
+                                <li data-target="#carouselCamisas" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-1.jpg" class="d-block w-100" alt="Slide 1 Camisetas">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-2.jpg" class="d-block w-100" alt="Slide 2 Camisetas">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-3.jpg" class="d-block w-100" alt="Slide 3 Camisetas">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselCamisas" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselCamisas" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Siguiente</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card-deck">
+                            <div class="col-6 col-md-4 p-0 mt-3">
+                                <div class="card">
+                                    <img class="card-image-top img-fluid" src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg" alt="Card Hipster Ultimate">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Hipster Ultimate</h4>
+                                        <p class="card-text">La camiseta ideal para Hipster.</p>
+                                        <button class="btn btn-primary">$229 <i class="fas fa-cart-plus"></i></button>
+                                        <button class="btn btn-light" data-toggle="modal" data-target="#modal1">Detalle</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 p-0 mt-3">
+                                <div class="card">
+                                    <img class="card-image-top img-fluid" src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-2.jpg" alt="Card On Motion Live">
+                                    <div class="card-body">
+                                        <h4 class="card-title">On Motion Live</h4>
+                                        <p class="card-text">Perfecta para salidas rocosas.</p>
+                                        <button class="btn btn-primary">$229 <i class="fas fa-cart-plus"></i></button>
+                                        <button class="btn btn-light" data-toggle="modal" data-target="#modal2">Detalle</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 p-0 mt-3">
+                                <div class="card">
+                                    <img class="card-image-top img-fluid" src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-3.jpg" alt="Card Underground Max">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Underground Max</h4>
+                                        <p class="card-text">Para los amantes underground.</p>
+                                        <button class="btn btn-primary">$229 <i class="fas fa-cart-plus"></i></button>
+                                        <button class="btn btn-light" data-toggle="modal" data-target="#modal3">Detalle</button>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <!-- Modals-->
+                    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal1">Hipster Ultimate</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="alert alert-primary" role="alert">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        Este producto está agotado.
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg" alt="..." class="img-thumbnail">
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <p>Precio: <strong>299</strong> </p>
+                                                </div>
+                                                <div class="col-12">
+                                                    <p>
+                                                        Calificación
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                    </p>
+                                                </div>
+                                                <div class="col-12">
+                                                    <span class="badge badge-warning">Hipster</span>
+                                                    <span class="badge badge-secondary">Deportiva</span>
+                                                </div>
+                                                <div class="col-12 pl-1 mt-1">
+                                                    <button type="button" class="btn btn-link">
+                                                        <i class="fas fa-heart"></i>
+                                                        Agregar a los deseos
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col mt-3">
+                                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Descripcion</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Comentarios</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="myTabContent">
+                                                <div class="tab-pane fade show active mt-2" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                    <p>
+                                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ipsa, corporis ex hic voluptatum facilis, tempore aliquid veritatis, reprehenderit alias doloribus voluptate! Asperiores magnam beatae autem minus, totam quae possimus.
+                                                    </p>
+                                                </div>
+                                                <div class="tab-pane fade mt-2" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                                    <div class="media">
+                                                        <img src="http://lorempixel.com/40/40" class="mr-3" alt="...">
+                                                        <div class="media-body">
+                                                            <h5 class="mt-0">Anderson Farid</h5>
+                                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis!
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group mt-3">
+                                                        <textarea name="mensaje" id="mensaje" placeholder="Ingresa tu comentario" class="form-control"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal2">Hipster Ultimate</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="alert alert-primary" role="alert">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        Este producto está agotado.
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-2.jpg" alt="..." class="img-thumbnail">
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <p>Precio: <strong>299</strong> </p>
+                                                </div>
+                                                <div class="col-12">
+                                                    <p>
+                                                        Calificación
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                    </p>
+                                                </div>
+                                                <div class="col-12">
+                                                    <span class="badge badge-warning">Hipster</span>
+                                                    <span class="badge badge-secondary">Deportiva</span>
+                                                </div>
+                                                <div class="col-12 pl-1 mt-1">
+                                                    <button type="button" class="btn btn-link">
+                                                        <i class="fas fa-heart"></i>
+                                                        Agregar a los deseos
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col mt-3">
+                                            <ul class="nav nav-tabs" id="myTab2" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home1" role="tab" aria-controls="home1" aria-selected="true">Descripcion</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="coment" data-toggle="tab" href="#comentario1" role="tab" aria-controls="comentario1" aria-selected="false">Comentarios</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="myTabContent2">
+                                                <div class="tab-pane fade show active mt-2" id="home1" role="tabpanel" aria-labelledby="home1">
+                                                    <p>
+                                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ipsa, corporis ex hic voluptatum facilis, tempore aliquid veritatis, reprehenderit alias doloribus voluptate! Asperiores magnam beatae autem minus, totam quae possimus.
+                                                    </p>
+                                                </div>
+                                                <div class="tab-pane fade mt-2" id="comentario1" role="tabpanel" aria-labelledby="coment">
+                                                    <div class="media">
+                                                        <img src="http://lorempixel.com/40/40" class="mr-3" alt="...">
+                                                        <div class="media-body">
+                                                            <h5 class="mt-0">Anderson Farid</h5>
+                                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis!
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group mt-3">
+                                                        <textarea name="mensaje" id="mensaje" placeholder="Ingresa tu comentario" class="form-control"></textarea>
+                                                    </div>
+                                                </div>      
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal3">Hipster Ultimate</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="alert alert-primary" role="alert">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        Este producto está agotado.
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-3.jpg" alt="..." class="img-thumbnail">
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <p>Precio: <strong>299</strong> </p>
+                                                </div>
+                                                <div class="col-12">
+                                                    <p>
+                                                        Calificación
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                    </p>
+                                                </div>
+                                                <div class="col-12">
+                                                    <span class="badge badge-warning">Hipster</span>
+                                                    <span class="badge badge-secondary">Deportiva</span>
+                                                </div>
+                                                <div class="col-12 pl-1 mt-1">
+                                                    <button type="button" class="btn btn-link">
+                                                        <i class="fas fa-heart"></i>
+                                                        Agregar a los deseos
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col mt-3">
+                                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="home3" data-toggle="tab" href="#descrip" role="tab" aria-controls="home" aria-selected="true">Descripcion</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="comment-tab" data-toggle="tab" href="#comment3" role="tab" aria-controls="profile" aria-selected="false">Comentarios</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="myTabContent">
+                                                <div class="tab-pane fade show active mt-2" id="descrip" role="tabpanel" aria-labelledby="homee">
+                                                    <p>
+                                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ipsa, corporis ex hic voluptatum facilis, tempore aliquid veritatis, reprehenderit alias doloribus voluptate! Asperiores magnam beatae autem minus, totam quae possimus.
+                                                    </p>
+                                                </div>
+                                                <div class="tab-pane fade mt-2" id="comment3" role="tabpanel" aria-labelledby="coment-tap">
+                                                    <div class="media">
+                                                        <img src="http://lorempixel.com/40/40" class="mr-3" alt="...">
+                                                        <div class="media-body">
+                                                            <h5 class="mt-0">Anderson Farid</h5>
+                                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis!
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group mt-3">
+                                                        <textarea name="mensaje" id="mensaje" placeholder="Ingresa tu comentario" class="form-control"></textarea>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <!-- End Modals-->
+                </div>
+            </div>                    
+        </div>
+
+        <div class="tab-content otro">
+            <div id="descripcion3" class="tab-pane fade in active">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div id="comentarios3" class="tab-pane fade">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Anderson Farid comento hace 2 días</div>
+                    <div class="panel-body">
+                        Esta camiseta esta super!
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="2" placeholder="Ingresa tu comentario"></textarea>
+                </div>                                                              
+            </div>                                        
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
