@@ -1,0 +1,20 @@
+{
+  "name": "extras-auth-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://julianarana@bitbucket.org/escenamia/auth-ui.git"
+  },
+  "keywords": [
+    "Authorization",
+    "UI"
+  ],
+  "author": "Julian Arana",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/escenamia/auth-ui#readme"
+}
