@@ -1,0 +1,45 @@
+{
+  "name": "extras-auth-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "webpack -d --env=dev",
+    "build:prod": "webpack -p --env=prod",
+    "start": "webpack-dev-server --hot --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://julianarana@bitbucket.org/escenamia/auth-ui.git"
+  },
+  "keywords": [
+    "Authorization",
+    "UI"
+  ],
+  "author": "Julian Arana",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/escenamia/auth-ui#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "style-loader": "^1.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react-router-dom": "^5.0.1"
+  }
+}
