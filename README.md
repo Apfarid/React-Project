@@ -1,22 +1,28 @@
 # README #
 
-Authentication UI
+React Boilerplate 
 
 ### What is this repository for? ###
 
-Authentication UI for Extras Authentication flow. This provides a unique way to input username and password information and do the request to the server
+React Boilerplate. This provides a unique way to input username and password information and do the request to the server
 
 ### How do I get set up? ###
 
-* Summary of set up
+* Run `npm install`
+
+To run the project
+* Run `npm run start`
+
+To Build project on production
+* Run `npm run build:prod`
 
 ### Contribution guidelines ###
 
-* Writing tests
-* Code review
-* Other guidelines
+* Follow git flow to create PR for develop branch
 
 ### Who do I talk to? ###
 
-* This repository is owned by Julian Arana (julianarana@gmail.com)
-* @julianarana
+This repository is owned by 
+* Anderson Palacio
+* Sergio Escobar
+* Julián Arana (@julianarana)
