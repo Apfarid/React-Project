@@ -3,10 +3,6 @@ import './style.css'
 
 class ButtonHamburguer extends Component {
 
-    state = {
-        active : false
-    }
-
     handlChange(){
        const corret = this.state.active
         this.setState({
@@ -17,7 +13,7 @@ class ButtonHamburguer extends Component {
 
     render(){
         return(
-            <button onClick={this.handlChange.bind(this)}>
+            <button onClick={this.props.onClick}>
                 <i className="fas fa-bars"></i>
             </button>
         )
